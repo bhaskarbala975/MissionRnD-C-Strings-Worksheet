@@ -14,14 +14,14 @@ NOTES:
 #include<string.h>
 char KthIndexFromEnd(char *str, int K)
 {
-	int i;
-	for (i = 0; str[i] != '\0'; i++)
-	{
-
-	}
-	 if (str == ""||str==NULL)
+	if (str == "" || str == NULL)
 		return '\0';
-	 else if (str != '\0'&&K <= i&&K >= 0)
+	int i=0;
+	
+	while (str[i] != '\0')
+		i++;
+	 
+	  if (str != '\0'&&K <= i&&K >= 0)
 	 {
 		 if (K == 0)
 			 return str[i - 1];

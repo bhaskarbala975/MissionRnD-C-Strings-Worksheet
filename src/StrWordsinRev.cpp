@@ -12,6 +12,8 @@ NOTES: Don't create new string.
 #include <Stdio.h>
 #include <string.h>
 
-void str_words_in_rev(char *input, int len){
+void str_words_in_rev(char *input, int len)
+{
+	input=strrev(input);
 	
 }

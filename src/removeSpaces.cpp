@@ -13,14 +13,15 @@ NOTES: Don't create new string.
 #include<stddef.h>
 char removeSpaces(char *str)
 {
+	if (str == NULL)
+		return '\0';
 	int i=0,  j, len;
 	while (str[i] != '\0')
 	{
 		i++;
 	}
 	len = i;
-	if (str == NULL)
-		return '\0';
+	
 	
 	
 	if (str != '\0')
